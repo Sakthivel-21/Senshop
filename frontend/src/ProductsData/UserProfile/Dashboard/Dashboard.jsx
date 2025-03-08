@@ -13,7 +13,7 @@ function Dashboard() {
     
 
     useEffect (() => {
-        axios.get('http://localhost:3001/dashboard')
+        axios.get(`${process.env.REACT_APP_API_URL}/dashboard`)
            .then((response) => {
              setUser(response.data);
            })

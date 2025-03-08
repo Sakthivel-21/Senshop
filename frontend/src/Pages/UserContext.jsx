@@ -9,14 +9,14 @@ const AuthProvider = ({ children }) => {
 
     // Fetch user on page load
     useEffect(() => {
-        axios.get("http://localhost:3001/profile", { withCredentials: true })
+        axios.get(`${process.env.REACT_APP_API_URL}/profile`, { withCredentials: true })
             .then(res => setUser(res.data))
             .catch(() => setUser(null)); // User not logged in
     }, []);
 
     // Logout function
     const logout = () => {
-        axios.post("http://localhost:3001/logout", {}, { withCredentials: true })
+        axios.post(`${process.env.REACT_APP_API_URL}/logout`, {}, { withCredentials: true })
             .then(() => setUser(null)) // Clear user state
             .catch(err => console.log(err));
     };

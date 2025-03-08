@@ -8,7 +8,7 @@ function SenshopProducts() {
     const[user, setUser] = useState()
 
     useEffect (() => {
-         axios.get('http://localhost:3001/senshopproducts')
+         axios.get(`${process.env.REACT_APP_API_URL}/senshopproducts`)
             .then((response) => {
               setUser(response.data);
             })

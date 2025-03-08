@@ -13,7 +13,7 @@ function BookingPage() {
     const [pay, setPay] = useState();
 
     useEffect (() => {
-        axios.get(`http://localhost:3001/payDetail/${id}`)
+        axios.get(`${process.env.REACT_APP_API_URL}/payDetail/${id}`)
            .then((response) => {
              setUser(response.data);
            })

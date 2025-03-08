@@ -13,7 +13,7 @@ function PulseProducts() {
      const[filteredProducts, setFilteredProducts] = useState()
 
     useEffect (() => {
-         axios.get('http://localhost:3001/pulseproductlist')
+         axios.get(`${process.env.REACT_APP_API_URL}/pulseproductlist`)
             .then((response) => {
               setUser(response.data);
               setFilteredProducts(response.data)

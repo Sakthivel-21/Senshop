@@ -11,7 +11,7 @@ function BookProducts() {
      const[filteredProducts, setFilteredProducts] = useState()
 
     useEffect (() => {
-         axios.get('http://localhost:3001/noteproductlist')
+         axios.get(`${process.env.REACT_APP_API_URL}/noteproductlist`)
             .then((response) => {
               setUser(response.data);
               setFilteredProducts(response.data)

@@ -24,7 +24,7 @@ function ProductDetails() {
   
 
     useEffect (() => {
-         axios.get(`http://localhost:3001/productsDetail/${id}`)
+         axios.get(`${process.env.REACT_APP_API_URL}/productsDetail/${id}`)
             .then((response) => {
               setUser(response.data);
             })
@@ -52,7 +52,7 @@ function ProductDetails() {
 
       const orderDetails = {pack,address, orderDate, delieveryDate , place: user._id, price: pack* user.discountprice}
 
-      const response = await axios.post('http://localhost:3001/orderDetails', {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/orderDetails`, {
         pack,address, orderDate, delieveryDate , place: user._id, price: pack* user.discountprice
       })
       const bookingId = response.data._id

@@ -16,7 +16,7 @@ const PaymentPage = () => {
     const [clientSecret, setClientSecret] = useState("");
 
     useEffect(() => {
-        fetch("http://localhost:3001/create-payment-intent", {
+        fetch(`${process.env.REACT_APP_API_URL}/create-payment-intent`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ amount: 1000, currency: "usd" }), // Example: $10 payment
@@ -31,7 +31,7 @@ const PaymentPage = () => {
     const [isCOD, setIsCOD] = useState(false);
 
     useEffect (() => {
-        axios.get(`http://localhost:3001/bookingDetail/${id}`)
+        axios.get(`${process.env.REACT_APP_API_URL}/bookingDetail/${id}`)
            .then((response) => {
              setUser(response.data);
            })
@@ -52,7 +52,7 @@ const fetchPost  = async (e) => {
 
      try {
         if(isCOD) {
-             const response = await axios.post('http://localhost:3001/payoptions', {
+             const response = await axios.post(`${process.env.REACT_APP_API_URL}/payoptions`, {
              pay:"You are selecting an Cash on Delievery",  places: user._id
          })
          const bookingId = response.data._id

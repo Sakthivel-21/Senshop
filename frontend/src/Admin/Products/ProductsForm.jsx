@@ -30,7 +30,7 @@ const ProductsForm = () => {
     formData.set('description', description);
     formData.set('file', files?.[0]);
 
-    axios.post("http://localhost:3001/productform", formData)
+    axios.post(`${process.env.REACT_APP_API_URL}/productform`, formData)
     .then(user => {console.log(user)
       navigate('/')
     })

@@ -12,7 +12,7 @@ function RiceProducts({searchTerm}) {
   
 
     useEffect (() => {
-         axios.get('http://localhost:3001/riceproductlist')
+         axios.get(`${process.env.REACT_APP_API_URL}/riceproductlist`)
             .then((response) => {
               setUser(response.data);
               setFilteredProducts(response.data)
