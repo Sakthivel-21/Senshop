@@ -18,9 +18,11 @@ const fs = require('fs')
 const Stripe = require("stripe");
 const path = require("path");
 const stripe = Stripe("sk_test_51QwK6XQFCTgqXGipJIDTppb5M3xFjKPkmusojMlE9YMv3N9eF2dqe9NopvTkD2M0Xmd5DfErcoc0FiyTC1o6lMwe00WluuwsyV");
+require('dotenv').config();
+const MONGO_URL = process.env.MONGODB_URL
+const alllowedOrigins = process.env.FRONTEND_URL
 
-
-mongoose.connect("mongodb://localhost:27017/Senshop")
+mongoose.connect(MONGO_URL)
 
 app.use(express.json())
 
@@ -29,7 +31,7 @@ app.use(cookieparser())
 app.use('/uploads', express.static(__dirname+'/uploads'));
 
 app.use(cors({
-    origin: ["http://localhost:3000"],
+    origin: alllowedOrigins,
     methods: ["GET", "PUT", "POST", "DELETE"],
     credentials: true
 }))
