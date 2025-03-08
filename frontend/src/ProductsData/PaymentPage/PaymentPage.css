@@ -1,0 +1,45 @@
+.payment-container {
+    max-width: 400px;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.payment-options{
+    width: 1480px;
+    height: 350px;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 15px;
+}
+.payment-options h3{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+@media  screen and (max-width: 360px) {
+    .delievery-details{
+        width: 90%;
+    }
+    .payment-container{
+        width: 75%;
+        height: 150px;
+    }
+    .payment-options{
+        width: 90%;
+        height: 450px;
+    }
+    .delievery-details2-right h2{
+        width: 90%;
+    }
+}

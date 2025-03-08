@@ -1,0 +1,155 @@
+.setnav-list {
+    display: flex;
+   margin-top: 20px;
+}
+.setnav-list h2{
+    display: flex;
+    padding-left: 80px;
+    color:black;
+}
+.setnavbar-button{
+    margin-left: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 55px;
+    height: 23px;
+    border: none;
+    padding: 5px;
+    background-color: lightgreen;
+   
+}
+.setnav-img{
+    
+        width: 30px;
+        height: 25px;
+        display: none;
+        margin-left: 500px;
+   
+}
+
+.setnav-point{
+    display: flex;
+    margin-left: 350px;
+    
+}
+.setnav-point ul{
+    display: flex;
+}
+.setnav-point ul Link{
+    text-decoration: none;
+}
+.setnav-point ul li{
+    display: flex;
+    padding-left: 50px;
+    color:black;
+}
+.setnavbar-btn{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 23px;
+    border: none;
+    padding: 5px;
+    background-color: lightgreen;
+   
+}
+.setlog-btn{
+    margin-left: 450px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 5px;
+    background-color: lightgreen;
+}
+.hide-setnav{
+    width: 350px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    margin-left: 1168px;
+    margin-top: -112px;
+    position: absolute;
+}
+.hide-setnav h2{
+    color: white;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-weight:900;
+}
+.hide-setnav button{
+    margin-left: 250px;
+    margin-top: -50px;
+    position: absolute;
+    border: none;
+    background-color: lightgreen;
+}
+.hide-setnav ul li{
+    color: white;
+   margin-left: 100px;
+    padding-top: 20px;
+    list-style: none;
+    font-weight:bold;
+}
+.hide-setnav p{
+    margin-left: 310px;
+    margin-top: -55px;
+    position: absolute;
+}
+.nav-imgsss{
+    width: 50px;
+    height: 25px;
+    display: none;
+    margin-left: 700px;
+    background-color: none;
+}
+
+
+@media  screen and (max-width: 376px) {
+    .setnav-list {
+        width: 100%;
+    }
+    .setnav-list h2 {
+        
+        padding-left: 20px;
+    }
+    .setnav-img{
+        display: block;
+        margin-left: 160px;
+        margin-top: 20px;
+
+    }
+    .setnav-point{
+        display: none;
+    }
+    .users-data{
+        display: none;
+    }
+    .setnavbar-btn {
+        display: none;
+    }
+    .setlog-btn {
+        display: none;
+    }
+    .nav-imgsss{
+        width: 30px;
+        height: 25px;
+        display: block;
+        margin-left: 40%;
+        margin-top: 20px;
+        border: none;
+        background: transparent;
+    }
+    .nav-imgsss img{
+        width: 30px;
+        height: 20px;
+     }
+    .hide-setnav{
+        width: 100%;
+       
+        margin-left: 0px;
+    }
+}

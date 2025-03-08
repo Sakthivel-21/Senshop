@@ -1,0 +1,199 @@
+.navbars{
+    width: 100%;
+    height: 650px;
+    
+} 
+.nav-images img{
+    width: 100%;
+    height: 650px;
+    
+}
+.nav-listing h2{
+    display: flex;
+    padding-left: 60px;
+    color:white;
+}
+.light-dry{
+    position: absolute;
+    background-color:black;
+    opacity: 0.5;
+    margin-top: -650px;
+    width: 1518px;
+    height: 650px;
+}
+.users-data{
+    padding-left: 300px;
+    display: flex;
+}
+.logout-button{
+    background-color: lightgreen;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.login-button{
+    background-color: lightgreen;
+    border: none;
+    margin-top: 15px;
+    margin-left: 370px;
+}
+.nav-imgss{
+    width: 50px;
+    height: 25px;
+    display: none;
+    margin-left: 500px;
+    background-color: none;
+}
+
+.nav-pointing{
+    display: flex;
+    margin-left: 350px;
+    
+}
+.nav-pointing ul{
+    display: flex;
+}
+.nav-pointing ul li{
+    display: flex;
+    padding-left: 50px;
+    color:white;
+}
+.nav-pointing ul li:hover{
+    text-decoration: underline lightgreen;
+}
+.nav-linking{
+    text-decoration: none;
+    color:white;
+}
+.nav-imgs img{
+    width: 100%;
+    height: 650px;
+    
+}
+.nav-listing{
+    display: flex;
+    top:15px;
+    color:white;
+    position: absolute;
+}
+.welcome{
+   position: absolute;
+    top: 200px;
+    margin-left: 570px;
+    text-align: center;color: white;
+}
+.class-sec{
+    display: flex;
+    top:15px;
+    color:white;
+    
+}
+.shop-btn{
+    border: none;
+    background-color: lightgreen;
+    padding: 5px;
+}
+.hide-nav{
+    width: 350px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    margin-left: 1167px;
+   margin-top: -650px;
+   position: absolute;
+}
+.hide-nav h2{
+    color: white;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-weight:900;
+}
+.hide-nav button{
+    margin-left: 250px;
+    margin-top: -50px;
+    position: absolute;
+    border: none;
+    background-color: lightgreen;
+}
+.hide-nav ul li{
+    color: white;
+   margin-left: 100px;
+    padding-top: 20px;
+    list-style: none;
+    font-weight:bold;
+}
+.hide-nav p{
+    margin-left: 310px;
+    margin-top: -55px;
+    position: absolute;
+}
+
+
+@media  screen and (max-width: 360px) {
+    .navbars{
+        width: 100%;
+        height: 500px;
+    } 
+    .nav-images{
+        width: 100%;
+        height: 500px;
+    } 
+    .nav-images img{
+        width: 100%;
+        height: 500px;
+        
+    }
+    .nav-listing h2{
+        
+        padding-left: 20px;
+        color:white;
+    }
+    .nav-listing{
+        width: 100%;
+    }
+    .light-dry{
+        position: absolute;
+        background-color:black;
+        opacity: 0.5;
+        margin-top: -500px;
+        width: 100%;
+        height: 500px;
+    }
+   .nav-imgss{
+        width: 30px;
+        height: 25px;
+        display: block;
+        margin-left: 40%;
+        margin-top: 20px;
+        border: none;
+        background: transparent;
+    }
+    .nav-pointing{
+        display: none;
+    }
+    .users-data{
+        
+        display: none;
+    }
+    .logout-button{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .welcome{
+        width: 100%;
+        margin-top: -30px;
+         margin-left: 5px;
+         color: white;
+     }
+     .nav-imgss img{
+        width: 30px;
+        height: 20px;
+     }
+     .hide-nav{
+        width: 100%;
+        margin-top: -500px;
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,91 @@
+.forms{
+    margin-top: 100px;
+    width: 650px;
+    height: 400px;
+    border: 1px solid lightgreen;
+   margin-left: 400px;
+}
+.forms h2{
+    padding-left: 270px;
+}
+.forms-group {
+    margin-bottom: 15px;
+    text-align: left;
+   margin-left: 50px;
+   
+}
+
+.forms-group label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-right: 40px;
+}
+
+.forms-group input {
+    width: 400px;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+   
+}
+.inputs-2{
+    width: 400px;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+   margin-left: 25px;
+}
+
+.forms-btn {
+    width: 200px;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 230px;
+    margin-top: 40px;
+}
+
+.forms-btn:hover {
+    background-color: #218838;
+}
+.forms p{
+    text-align: center;
+    padding-top: 30px
+}
+
+@media  screen and (max-width: 360px) {
+    .forms{
+        width: 90%;
+        margin-left: 10px;
+        margin-top: 40px;
+        height: 450px;
+    }
+    .forms h2{
+       padding-left: 40%;
+    }
+    .forms-group{
+       margin-left: 10px;
+    }
+    .forms-group input{
+        width: 250px;
+        
+    } 
+    .inputs-2{
+        width: 250px;
+        margin-left: -0px;
+    }
+    .forms-btn{
+        margin-left:20%;
+    }
+    .forms  p{
+        padding-left: 10%;
+    }
+}

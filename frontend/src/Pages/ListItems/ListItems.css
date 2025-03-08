@@ -1,0 +1,150 @@
+.items{
+    text-align: center;
+    padding-top: 40px;
+}
+.hr-line{
+    background-color: lightgreen;
+    height: 2px;
+    width: 300px;
+    border: none;
+}
+.list-1{
+    display: flex;
+    gap: 20px;
+    width: 1300px;
+    height: 270px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.list-2{
+    display: flex;
+    gap: 20px;
+    width: 1300px;
+    height: 270px;
+    margin-left: 100px;
+}
+.item-1{
+    width: 350px;
+    height: 220px;
+    background-color:lightgreen;
+    margin-top: 40px;
+    margin-left: 50px;
+    display: flex;
+    border: 5px solid lightgreen;
+}
+.item-2{
+    width: 350px;
+    height: 220px;
+    background-color: lightgreen;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    border: 5px solid lightgreen;
+}
+.item-3{
+    width: 350px;
+    height: 220px;
+    background-color:lightgreen;
+    margin-top: 40px;
+    display: flex;
+    border: 5px solid lightgreen;
+}
+.item-4{
+    width: 350px;
+    height: 220px;
+    background-color:lightgreen;
+    margin-left: 50px;
+    margin-top: 40px;
+    display: flex;
+    border: 5px solid lightgreen;
+}
+.item-5{
+    width: 350px;
+    height: 220px;
+    background-color: lightgreen;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    border: 5px solid lightgreen;
+}
+.item-6{
+    width: 350px;
+    height: 220px;
+    background-color:lightgreen;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid lightgreen;
+}
+
+.item-right h3{
+    text-align: center;
+}
+.item-right{
+    width: 350px;
+    height: 150px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+.item-right img{
+    width: 350px;
+    height: 150px;
+}
+
+@media  screen and (max-width: 360px)  {
+    
+    .list-1 {
+        width: 100%;
+        margin-left: 0px;
+        display:block;
+       height: 800px;
+    }
+    .list-2{
+        width: 100%;
+        margin-left: 0px;
+        display: block;
+        height: 800px;
+        margin-right: 0px;
+    }
+    .item-right{
+        width: 100%;
+        margin-left: 0px;
+        display: block;
+    }
+    .item-right img{
+        width: 100%;
+      
+    }
+    .item-1{
+        margin-left: 10px;
+        width: 90%;
+        display: block;
+    }
+    .item-2{
+        margin-left: 10px;
+        width: 90%;
+        display: block;
+    }
+    .item-3{
+        margin-left: 10px;
+        width: 90%;
+        display: block;
+    }
+    .item-4{
+        margin-left: 10px;
+        width: 90%;
+        display: block;
+    }
+    .item-5{
+        margin-left: 10px;
+        width: 90%;
+        display: block;
+    }
+    .item-6{
+        margin-left: 10px;
+        width: 90%;
+        display: block;
+
+    }
+}

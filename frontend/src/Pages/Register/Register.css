@@ -1,0 +1,90 @@
+.form{
+    margin-top: 100px;
+    width: 650px;
+    height: 500px;
+    border: 1px solid lightgreen;
+   margin-left: 400px;
+}
+.form h2{
+    padding-left: 270px;
+}
+.form-group {
+    margin-bottom: 15px;
+    margin-left: 50px;
+   
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-right: 40px;
+}
+
+.form-group input {
+    width: 400px;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+   
+}
+.input-2{
+    width: 400px;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+   margin-left: 25px;
+}
+
+.form-btn {
+    width: 200px;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 230px;
+    margin-top: 40px;
+}
+
+.form-btn:hover {
+    background-color: #218838;
+}
+.form p{
+    text-align: center;
+    padding-top: 30px
+}
+
+@media  screen and (max-width: 360px) {
+    .form{
+        width: 90%;
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    .form h2{
+      padding-left: 35%;
+      
+    }
+    .form-group{
+       margin-left: 10px;
+    }
+    .form-group input{
+        width: 250px;
+        
+    } 
+    .input-2{
+        width: 250px;
+        margin-left: -0px;
+    }
+    .form-btn{
+        margin-left:20%;
+    }
+    .form  p{
+        padding-left: 10%;
+    }
+}

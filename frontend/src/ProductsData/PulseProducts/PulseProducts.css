@@ -1,0 +1,99 @@
+.search-bar{
+    width: 500px;
+    height: 20px;
+    align-items: center;
+    border: 1px solid black;
+    margin-left: 500px;
+    margin-top: 120px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.pulse-head{
+    padding-top: 50px;
+    
+    text-align: center;
+}
+.pulse-link{
+    color: black;
+}
+.pulses{
+   margin-left: 80px;
+    display: inline-block;
+}
+.pulse-products{
+    width: 300px;
+    height: 420px;
+    margin-left: 80px;
+    margin-top: 50px;
+    transition: transform 0.2s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(3fr, 1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.pulse-products:hover{
+    transform: scale(1.1);
+}
+.pulse-products img{
+    width: 200px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.pulse-products h2{
+    
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.pulse-products-price p{
+    text-decoration: line-through;
+    display: inline-block;
+    padding-left: 50px;
+}
+.pulse-products-price h3{
+    display: inline-block;
+    padding-left: 50px;
+}
+.pulse-products-price{
+    width: 300px;
+    height: 130px;
+    background-color: lightgreen;
+    margin-top: 20px;
+}
+.pulse-products-price h2{
+    text-align: center;
+}
+
+@media  screen and (max-width: 360px)  {
+    .pulses{
+        margin-left: 15px;
+        display: inline-block;
+        width: 40%;
+    }
+    .pulse-products{
+        width:100%;
+        height: 300px;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .pulse-products img{
+        width: 100px;
+        height: 120px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .pulse-products-price{
+        width: 100%;
+        height: 160px;
+      
+    }
+    .pulse-products-price p{
+        display: none;
+    }
+    .pulse-products-price h3{
+        padding-left: 30px;
+        margin-top: -35px;
+    }
+}
