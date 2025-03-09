@@ -38,7 +38,7 @@ app.use(cookieparser())
 app.use('/uploads', express.static(__dirname+'/uploads'));
 
 app.use(cors({
-    origin: alllowedOrigins,
+    origin: "https://senshop-frontend-six.vercel.app",
     methods: ["GET", "PUT", "POST", "DELETE"],
     credentials: true
 }))
