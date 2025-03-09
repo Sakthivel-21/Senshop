@@ -22,7 +22,14 @@ require('dotenv').config();
 const MONGO_URL = process.env.MONGODB_URL
 const alllowedOrigins = process.env.FRONTEND_URL
 
-mongoose.connect('mongodb+srv://sakthivelkalidass:Vi9TjMeNH402JOMv@grocery.5iraw.mongodb.net/?retryWrites=true&w=majority&appName=Grocery')
+mongoose.connect(MONGO_URL)
+    .then(() =>console.log('mongodb connected'))
+    .catch(() => console.error('mongodb not connected'))
+
+
+if(!MONGO_URL) {
+    console.error('missing mongodb url')
+}
 
 app.use(express.json())
 
