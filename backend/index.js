@@ -22,7 +22,7 @@ require('dotenv').config();
 const MONGO_URL = process.env.MONGODB_URL
 const alllowedOrigins = process.env.FRONTEND_URL
 
-mongoose.connect(MONGO_URL)
+mongoose.connect('mongodb+srv://sakthivelkalidass:Vi9TjMeNH402JOMv@grocery.5iraw.mongodb.net/?retryWrites=true&w=majority&appName=Grocery')
 
 app.use(express.json())
 
