@@ -44,7 +44,7 @@ app.use(cors({
 }))
 
 app.get('/', (req, res) => {
-    res.json('mern stack')
+    res.json('mern stack developer')
 })
 
 app.post('/register', async (req, res) => {
