@@ -130,6 +130,8 @@ function Navbar() {
        <Link to='/' className='nav-linking'><li >Home</li></Link>
         <Link to='/productsItems' className='nav-linking'><li>Products</li></Link>
         <Link to='/contact' className='nav-linking'><li>Contacts</li></Link>
+        <Link to='/login' className='nav-linking'><li>Login</li></Link>
+     
         <Link to='/dashboard' className='nav-linking'><li>Dashboard</li></Link>
      
        </ul>
