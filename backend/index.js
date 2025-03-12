@@ -26,9 +26,8 @@ mongoose.connect(MONGO_URL, {
     serverSelectionTimeoutMS: 50000,
 }).then(() => {
     console.log('mongodb connected')
-    app.listen(PORT, (req, res) => {
-        console.log("server is running on 3001")
-   })
+   
+   
 }).catch(() => {console.log('mongodb not connected')
 })
 
@@ -307,5 +306,8 @@ app.post("/create-payment-intent", async (req, res) => {
     }
 });
 
-  
+app.listen(PORT, (req, res) => {
+    console.log("server is running on 3001")
+
+})
 
