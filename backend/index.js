@@ -24,7 +24,7 @@ const alllowedOrigins = process.env.FRONTEND_URL
 
 mongoose.connect(MONGO_URL)
     .then(() =>console.log('mongodb connected'))
-    .catch(() => console.error('mongodb not connected'))
+    .catch(() => console.log('mongodb not connected'))
 
 
 if(!MONGO_URL) {
@@ -42,6 +42,10 @@ app.use(cors({
     methods: ["GET", "PUT", "POST", "DELETE"],
     credentials: true
 }))
+
+app.get('/', (req, res) => {
+    res.json('mern stack')
+})
 
 app.post('/register', async (req, res) => {
     const {name, email, password}= req.body;
