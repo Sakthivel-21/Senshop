@@ -22,10 +22,17 @@ require('dotenv').config();
 const MONGO_URL = process.env.MONGODB_URL
 const alllowedOrigins = process.env.FRONTEND_URL
 
-mongoose.connect(MONGO_URL)
-    .then(() =>console.log('mongodb connected'))
-    .catch(() => console.log('mongodb not connected'))
+mongoose.connect(MONGO_URL, {
+    serverSelectionTimeoutMS: 50000,
+}).then(() => {
+    console.log('mongodb connected')
+    app.listen(PORT, (req, res) => {
+        console.log("server is running on 3001")
+   })
+}).catch(() => {console.log('mongodb not connected')
+})
 
+   
 
 if(!MONGO_URL) {
     console.error('missing mongodb url')
@@ -301,6 +308,4 @@ app.post("/create-payment-intent", async (req, res) => {
 });
 
   
-app.listen(PORT, (req, res) => {
-    console.log("server is running on 3001")
-})
+
