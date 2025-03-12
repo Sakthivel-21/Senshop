@@ -64,7 +64,8 @@ function BookingPage() {
  
          <div className='delievery-details2'>
             <div className='delievery-details2-left'>
-                <img src={'http://localhost:3001/'+(user.places.place.image)}></img>
+                
+                <img src={`${process.env.REACT_APP_API_URL}/${user.places.place.image}`} alt=''></img>
             </div>
             
             <div className='delievery-details2-right'>

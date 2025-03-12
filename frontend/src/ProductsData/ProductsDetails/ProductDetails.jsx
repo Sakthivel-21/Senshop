@@ -84,7 +84,8 @@ function ProductDetails() {
     <div className='Product-details'>
 
       <div className='Product-details-1'>
-           <img src={'http://localhost:3001/'+(user.image)} alt=''></img>
+           <img src={`${process.env.REACT_APP_API_URL}/${user.image}`} alt=''></img>
+          
            <h3>Description</h3>
            <p>{user.description}</p>
       </div>

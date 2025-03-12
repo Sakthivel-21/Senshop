@@ -45,7 +45,7 @@ function SnacksProducts() {
           <div className='snacks-products'>
   
              
-               <img src={'http://localhost:3001/'+(product.image)} alt=''></img>
+          <img src={`${process.env.REACT_APP_API_URL}/${product.image}`} alt=''></img>
              
               <div className='snacks-products-price'>
                <h2 className='cate'>{product.category}</h2>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
-import CheckoutForm from "../CheckoutForm/CheckoutForm";
+//import { Elements } from "@stripe/react-stripe-js";
+//import { loadStripe } from "@stripe/stripe-js";
+//import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import './PaymentPage.css'
 import {format} from "date-fns";
 import axios from "axios";
@@ -10,10 +10,10 @@ import SetNavbar from "../../Pages/SetNavbar/SetNavbar";
 import { Navigate } from "react-router-dom";
 
 // Load Stripe with your publishable key
-const stripePromise = loadStripe("pk_test_51QwK6XQFCTgqXGipMJWkMZkfq5B3YkLHZf7dhi92rn74cE1Cu19pMjAjx5v7vez82BWLlnnKxih2FPalJLVbsRiC00qhvUDwad");
+//const stripePromise = loadStripe("pk_test_51QwK6XQFCTgqXGipMJWkMZkfq5B3YkLHZf7dhi92rn74cE1Cu19pMjAjx5v7vez82BWLlnnKxih2FPalJLVbsRiC00qhvUDwad");
 
 const PaymentPage = () => {
-    const [clientSecret, setClientSecret] = useState("");
+    {/*const [clientSecret, setClientSecret] = useState("");
 
     useEffect(() => {
         fetch(`${process.env.REACT_APP_API_URL}/create-payment-intent`, {
@@ -23,7 +23,7 @@ const PaymentPage = () => {
         })
             .then((res) => res.json())
             .then((data) => setClientSecret(data.clientSecret));
-    }, []);
+    }, []);*/}
  const {id} = useParams()
     
     const[user, setUser] = useState()
@@ -81,7 +81,8 @@ const fetchPost  = async (e) => {
          
                  <div className='delievery-details2'>
                     <div className='delievery-details2-left'>
-                        <img src={'http://localhost:3001/'+(user.place.image)}></img>
+                       
+                        <img src={`${process.env.REACT_APP_API_URL}/${user.place.image}`} alt=''></img>
                     </div>
                     
                     <div className='delievery-details2-right'>
@@ -101,18 +102,14 @@ const fetchPost  = async (e) => {
             <div className="payment-options">
             <h3 >Payment Options</h3>
             <hr className='hr-lined'/>
-         
-        <div className="payment-container">
-            <h2>Stripe Payment</h2>
-            {clientSecret && (
-                <Elements stripe={stripePromise}>
-                    <CheckoutForm clientSecret={clientSecret} />
-                </Elements>
-            )}
-         </div>
+       
 
          <div >
          <form onSubmit={fetchPost}>
+         <label>
+        <input type="checkbox" checked={isCOD} onChange={handleCheckboxChange} className='input-book'/>
+        Pay with Gpay
+        </label>
         <label>
         <input type="checkbox" checked={isCOD} onChange={handleCheckboxChange} className='input-book'/>
         Cash On Delievery
