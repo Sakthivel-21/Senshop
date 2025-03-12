@@ -19,7 +19,7 @@ const Stripe = require("stripe");
 const path = require("path");
 const stripe = Stripe("sk_test_51QwK6XQFCTgqXGipJIDTppb5M3xFjKPkmusojMlE9YMv3N9eF2dqe9NopvTkD2M0Xmd5DfErcoc0FiyTC1o6lMwe00WluuwsyV");
 require('dotenv').config();
-const MONGO_URL = process.env.MONGODB_URL
+const MONGO_URL = 'mongodb+srv://sakthivelkalidass:cMounVHTZbigQDIy@senshop.tfixn.mongodb.net/senshop?retryWrites=true&w=majority'
 const alllowedOrigins = process.env.FRONTEND_URL
 
 mongoose.connect(MONGO_URL, {
