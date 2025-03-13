@@ -33,13 +33,9 @@ function Login() {
 
        const handleSubmit = async (e) => {
        e.preventDefault();
-       axios.post(`${process.env.REACT_APP_API_URL}/login`, { email, password})
-       .then(result => {
-        console.log(result)
-        navigate('/')
-        window.location.reload();
-       })
-       .catch(err =>console.log(err))
+       axios.post(`${process.env.REACT_APP_API_URL}/login`, { email, password},{withCredentials: true})
+            .then(res => console.log(res.data))
+            .catch(err => console.log(err))
       }
        
 
