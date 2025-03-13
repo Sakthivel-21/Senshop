@@ -75,11 +75,11 @@ app.post('/login', async (req, res) => {
     if(user){
         const passOk = bcrypt.compareSync(password, user.password);
         if (passOk) {
-             jwt.sign({email: user.email, _id: user._id, name: user.name }, jwtSecret,{ }, (err, token) => {
+             jwt.sign({email: user.email, _id: user._id, name: user.name }, jwtSecret, (err, token) => {
                   if(err) {
                      res.json(err)
                     }
-                  res.cookie('token', token).json(user)
+                  res.cookie('token', token, {httpOnly: true}).json({user, token})
          })}}
     else {
         res.json('not found')
@@ -110,7 +110,7 @@ app.post('/logout', (req, res) => {
 
 function getUserDataform (req) {
     return new Promise ((resolve, reject) => {
-        jwt.verify(req.cookies.token, jwtSecret, {}, async (err, userData) => {
+        jwt.verify(req.cookies.token, jwtSecret,  async (err, userData) => {
             if(err) throw err;
             resolve(userData)
         })
