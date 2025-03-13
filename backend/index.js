@@ -109,7 +109,11 @@ app.get('/profile', (req, res) => {
 
       
 app.post('/logout', (req, res) => {
-    res.clearCookie("token")
+    res.clearCookie('token', {
+        httpOnly: true,
+        sameSite: 'none',
+        secure: true
+    })
     res.json("logout successfully")
 })
 
