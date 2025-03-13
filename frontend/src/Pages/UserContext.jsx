@@ -10,7 +10,14 @@ const AuthProvider = ({ children }) => {
     // Fetch user on page load
     useEffect(() => {
         axios.get(`${process.env.REACT_APP_API_URL}/profile`, { withCredentials: true })
-            .then(res => setUser(res.data))
+            .then(res => {
+                if(res.data && !res.data.error){
+                setUser(res.data)
+            }
+            else {
+                setUser(null)
+            }
+            })
             .catch(() => setUser(null)); // User not logged in
     }, []);
 

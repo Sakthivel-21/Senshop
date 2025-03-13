@@ -79,7 +79,11 @@ app.post('/login', async (req, res) => {
                   if(err) {
                      res.json(err)
                     }
-                  res.cookie('token', token, {httpOnly: true}).json({user, token})
+                  res.cookie('token', token, 
+                    {httpOnly: true,
+                     sameSite: 'none',
+                     secure: true
+                    }).json({user, token})
          })}}
     else {
         res.json('not found')
@@ -88,6 +92,7 @@ app.post('/login', async (req, res) => {
 
    
 app.get('/profile', (req, res) => {
+    console.log(req.cookies)
     const {token} = req.cookies;
     if(token){
          jwt.verify(token, jwtSecret, { }, async(err, userData) => {
