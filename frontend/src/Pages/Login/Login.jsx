@@ -34,7 +34,10 @@ function Login() {
        const handleSubmit = async (e) => {
        e.preventDefault();
        axios.post(`${process.env.REACT_APP_API_URL}/login`, { email, password},{withCredentials: true})
-            .then(res => console.log(res.data))
+            .then((res) => {
+              console.log(res.data)
+              window.location.href = '/'
+            })
             .catch(err => console.log(err))
       }
        
