@@ -53,7 +53,7 @@
     height: 23px;
     border: none;
     padding: 5px;
-    background-color: lightgreen;
+   
    
 }
 .setlog-btn{
@@ -67,7 +67,7 @@
 }
 .hide-setnav{
     width: 350px;
-    height: 300px;
+    height: 320px;
     background-color: black;
     color: white;
     margin-left: 1168px;
@@ -77,15 +77,15 @@
 .hide-setnav h2{
     color: white;
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 15px;
     font-weight:900;
 }
-.hide-setnav button{
-    margin-left: 250px;
+.btn-close{
+    margin-left: 85%;
     margin-top: -50px;
     position: absolute;
     border: none;
-    background-color: lightgreen;
+   
 }
 .hide-setnav ul li{
     color: white;
@@ -94,10 +94,13 @@
     list-style: none;
     font-weight:bold;
 }
+.hide-setnav ul {
+    margin-top: 40px;
+}
 .hide-setnav p{
     margin-left: 310px;
     margin-top: -55px;
-    position: absolute;
+   
 }
 .nav-imgsss{
     width: 50px;
@@ -106,6 +109,28 @@
     margin-left: 700px;
     background-color: none;
 }
+.btn-close{
+    background: transparent;
+    background-color: black;
+    width: 50px;
+}
+.user-names{
+    padding-left: 40px;
+}
+.user-buttons{
+    margin-top: -40px;
+    background-color: lightgreen;
+    margin-left: 70%;
+    position:absolute;
+}
+.log-btn{
+   margin-top: -10px;
+    background-color: lightgreen;
+    margin-left: 40%;
+    position:absolute;
+    border: none;
+}
+
 
 
 @media  screen and (max-width: 376px) {
@@ -149,7 +174,7 @@
      }
     .hide-setnav{
         width: 100%;
-       
+       position: absolute;
         margin-left: 0px;
     }
 }

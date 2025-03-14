@@ -124,14 +124,21 @@ function Navbar() {
 {
   show && (<div className='hide-nav'>
   <h2>SENSHOP</h2>
-  <Link to='/login'><button>Login</button></Link>
-  <button  onClick={ShowName}>cancel</button>
+  <button  onClick={ShowName} className='btn-close'>❎</button>
+
+  {
+    user ? (
+      <>
+  <Link to='/dashboard' style={{color:'white'}}><h3 className='user-name'>Welcome,{user.name}</h3></Link>
+  <Link to='/' className='user-btns'><button onClick={logout}  style={{background:'lightgreen'}}>Logout</button></Link></>
+    ) : (
+  <Link to='/login'  className='logs-btn' ><button style={{background:'lightgreen'}}>Login</button></Link> )
+  }
+  
        <ul>
        <Link to='/' className='nav-linking'><li >Home</li></Link>
         <Link to='/productsItems' className='nav-linking'><li>Products</li></Link>
         <Link to='/contact' className='nav-linking'><li>Contacts</li></Link>
-        <Link to='/login' className='nav-linking'><li>Login</li></Link>
-     
         <Link to='/dashboard' className='nav-linking'><li>Dashboard</li></Link>
      
        </ul>

@@ -95,7 +95,7 @@
 }
 .hide-nav{
     width: 350px;
-    height: 300px;
+    height: 400px;
     background-color: black;
     color: white;
     margin-left: 1167px;
@@ -109,11 +109,14 @@
     font-weight:900;
 }
 .hide-nav button{
-    margin-left: 250px;
+    margin-left: 85%;
     margin-top: -50px;
     position: absolute;
     border: none;
-    background-color: lightgreen;
+   
+}
+.hide-nav ul {
+    margin-top:90px;
 }
 .hide-nav ul li{
     color: white;
@@ -127,7 +130,26 @@
     margin-top: -55px;
     position: absolute;
 }
-
+.btn-close{
+    background: transparent;
+    background-color: black;
+    width: 50px;
+}
+.user-name{
+    padding-left: 40px;
+}
+.user-btns{
+   margin-top: 10px;
+    background-color: lightgreen;
+    margin-left: 70%;
+    position:absolute;
+}
+.logs-btn{
+    margin-top: 70px;
+    background-color: lightgreen;
+    margin-left: 40%;
+    position:absolute;
+}
 
 @media  screen and (max-width: 360px) {
     .navbars{
