@@ -1,11 +1,14 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect, useContext} from 'react'
 import './SenshopProducts.css'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import { AuthContext } from '../../Pages/UserContext'
 
 function SenshopProducts() {
 
     const[user, setUser] = useState()
+
+    const {logout} = useContext(AuthContext)
 
     useEffect (() => {
          axios.get(`${process.env.REACT_APP_API_URL}/senshopproducts`)
@@ -30,6 +33,8 @@ function SenshopProducts() {
 
              <Link to='/adminpanel' style={{textDecoration:'none', color:'black'}}> <p>Add Products</p></Link>
              <p>Senshop products</p>
+
+             <Link to='/'><button onClick={logout} className='logout-code'>Logout</button></Link>
       </div>
 
       <div className='senshoping-2'>

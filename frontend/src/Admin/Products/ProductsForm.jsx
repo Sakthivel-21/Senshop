@@ -32,7 +32,7 @@ const ProductsForm = () => {
 
     axios.post(`${process.env.REACT_APP_API_URL}/productform`, formData)
     .then(user => {console.log(user)
-      navigate('/')
+      navigate('/senshopproducts')
     })
     .catch ((err) => 
       console.log(err))

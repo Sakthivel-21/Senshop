@@ -83,6 +83,14 @@
     text-align: center;
     display: inline-block;
 }
+.logout-code{
+    width: 60px;
+    padding: 7px;
+    border: none;
+    background-color: lightgreen;
+    margin-top: 30px;
+    margin-left: 50px;
+}
 
 @media  screen and (max-width: 360px)  {
     .senshopproducts{
@@ -148,6 +156,11 @@
     display: block;
     width: 100%;
     margin-top: 150px;
+}
+.logout-code{
+    position: absolute;
+    margin-top: -145px;
+    margin-left: 80%;
 }
 
 }

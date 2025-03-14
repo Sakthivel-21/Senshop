@@ -36,7 +36,13 @@ function Login() {
        axios.post(`${process.env.REACT_APP_API_URL}/login`, { email, password},{withCredentials: true})
             .then((res) => {
               console.log(res.data)
-              window.location.href = '/'
+              if(email=== "admin7315@gmail.com" && password === "admin7315"){
+                navigate('/adminpanel')
+              }
+              else {
+                navigate('/')
+                window.location.reload();
+              }
             })
             .catch(err => console.log(err))
       }
@@ -73,7 +79,7 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <button type="submit" className="forms-btn">Register</button>
+      <button type="submit" className="forms-btn">Login</button>
 
      <p>Don't have an account: <Link to='/register'>Register here</Link></p>
     </form>
