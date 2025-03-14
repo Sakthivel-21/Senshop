@@ -145,49 +145,6 @@ function Navbar() {
 </div> )
 }
 
-     {/*} </SwiperSlide>
-
-
-      <SwiperSlide>
-      <div className='navbar'>
-
-<div className='nav-imgs'>
-    <img src={img1} alt=''></img>
-</div>
-</div>
-
-<div className='nav-list'>
-  <section className='class-sec'>
-    <h2>SENSHOP</h2>
-
-    <img src={sidebar} alt='' className='nav-img'></img>
-
-    <div className='nav-point'>
-      <ul>
-        <li>Home</li>
-        <li>Products</li>
-        <li>Contacts</li>
-      </ul>
-
-    </div>
-    <button className='navbar-button'>Sign in</button>
-    </section>
-</div>
-<div className='welcome'>
-<h1 >Welcome to SENSHOP</h1>
-<h3>We are delighted to serve You with <br/>
-    fresh, oragnic and high quality grocries <br/>
-    to your doorstep. Happy Shopping!</h3>
-    <button>Shop now</button>
-</div>
-      </SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      ...
-    </Swiper>
-
-<div/>
-      */}
 </>
   )
 }

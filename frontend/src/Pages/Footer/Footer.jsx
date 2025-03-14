@@ -16,6 +16,10 @@ const Footer = () => {
             <li>East street,2nd Ward  </li>
            
             <li>Poosaripatti, Dindigul(dt)</li>
+
+            <li>sakthivelkalidass@gmail.com</li>
+
+            <li>91+ 6385525185</li>
             
           </ul>
         </div>
