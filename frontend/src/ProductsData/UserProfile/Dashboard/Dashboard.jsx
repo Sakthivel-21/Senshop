@@ -30,8 +30,10 @@ function Dashboard() {
   return (
    <>
    <SetNavbar/>
-   <h2 className='dashboard-head'>Dashboard</h2>
+   <h2 className='dashboard-head'>Your Orders</h2>
    <hr className='hr-lineded'/>
+
+  
 
   <div className='dashboard'>
   { user.map(booking => (
@@ -45,7 +47,7 @@ function Dashboard() {
         
           <p className='dash-1'>Items: {booking.places.pack}</p>
         
-          <p className='dash-1'>Total Price: {booking.places.price}</p>
+          <p className='dash-1'>Total Price: RS {booking.places.price}</p>
         
           <p className='dash-1'>Delievery Date: {format(new Date(booking.places.delieveryDate), "EEEE , yyyy-MM-dd")}</p>
         

@@ -61,7 +61,7 @@ function SetNavbar() {
       user ? (
         <>
     <Link to='/dashboard' style={{color:'white'}}><h3 className='user-names'>Welcome,{user.name}</h3></Link>
-    <Link to='/'><button onClick={logout}  style={{background:'lightgreen'}} className='user-buttons'>Logout</button></Link></>
+    <Link to='/'><button onClick={logout}  style={{background:'lightgreen'}} className='user-but'>Logout</button></Link></>
       ) : (
     <Link to='/login' ><button style={{background:'lightgreen'}}   className='log-btn'>Login</button></Link> )
     }

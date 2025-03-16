@@ -5,6 +5,7 @@ import { Link, redirect } from 'react-router-dom'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { Navigate } from 'react-router-dom'
+import {format} from "date-fns";
 
 
 function ProductDetails() {
@@ -95,16 +96,16 @@ function ProductDetails() {
            <button className='rate-btn'>4.5</button>
            <p>(14) Ratings</p>
            <h3>Special Price</h3>
-           <h2 className='products-discountprice'>${user.discountprice} only</h2>
-           <h2 className='products-price'>${user.price}</h2>
+           <h2 className='products-discountprice'>RS {user.discountprice} only</h2>
+           <h2 className='products-price'>RS {user.price}</h2>
            <h4>Available Offer</h4>
-           <li style={{marginTop:-8}}>Buy Three Items to reduce 10% of Cost</li>
+           <li style={{marginTop:-8}}>Buy Three Items to reduce 20% of Cost</li>
            
            <form className='product-form' onSubmit={fetchPost}>
-           <h2>Order Details</h2>
+           <h2>Order Now</h2>
            <div className='product-order'>
            <label>Quantity:
-           <input type='number'  value={user.stock} className='input-type1'></input> kg</label>
+           <input type='number'  value={user.stock} className='input-type11'></input> </label>
            </div>
 
            <div className='product-order'>
@@ -119,17 +120,18 @@ function ProductDetails() {
 
            <div className='product-order'>
            <label>Order Date: </label>
-           <input value={orderDate}  onChange={(e) => setOrderDate(e.target.value)} className='input-type2'></input>
-           </div>
+           <p className='input-type2'>{format(new Date(orderDate), "EEEE , yyyy-MM-dd")}</p>
+         
+            </div>
            
            <div className='product-order'>
            <label>Delievery Date: </label>
-           <input value={delieveryDate} onChange={(e) => setDelieveryDate(e.target.value)} className='input-type2'></input>
+            <p className='input-type2'>{format(new Date(delieveryDate), "EEEE , yyyy-MM-dd")}</p>
            </div>
 
            <div className='product-order' >
            <label>Price: </label>
-           <p>$ {pack* user.discountprice} only</p>
+           <p>RS {pack* user.discountprice} only</p>
            </div>
            <button type='submit' className='sub-btn'>Order now</button>
            </form>

@@ -75,7 +75,7 @@ function BookingPage() {
                  <p>Order Date : {format(new Date(user.places.orderDate) , "EEEE, yyyy-MM-dd")}</p>
                  <p>Delievery Date : {format(new Date(user.places.delieveryDate), "EEEE, yyyy-MM-dd")}</p>
                  <p>Delievery Charge  : Free</p>
-                 <p>Price ({user.places.pack}) item : $ {user.places.price}</p>
+                 <p>Price ({user.places.pack}) item : RS {user.places.price}</p>
             </div>
          </div>
 

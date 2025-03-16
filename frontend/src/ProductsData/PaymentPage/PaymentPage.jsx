@@ -106,11 +106,11 @@ const fetchPost  = async (e) => {
 
          <div >
          <form onSubmit={fetchPost}>
-         <label>
+         <label className="form-1">
         <input type="checkbox" checked={isCOD} onChange={handleCheckboxChange} className='input-book'/>
         Pay with Gpay
         </label>
-        <label>
+        <label  className="form-2">
         <input type="checkbox" checked={isCOD} onChange={handleCheckboxChange} className='input-book'/>
         Cash On Delievery
         </label>

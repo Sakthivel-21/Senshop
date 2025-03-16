@@ -53,11 +53,12 @@
     margin-top: 20px;
 }
 .Product-details-1 p{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 130px;
+    width: 400px;
 }
 .Product-details-1 h3{
-    padding-left: 15px;
+    padding-left: 130px;
+    width: 400px;
 }
 .rate-btn{
     display:flex;
@@ -91,13 +92,19 @@
 .product-order{
     margin-top: 20px;
 }
-.input-type1{
-   width: 30px;
-   margin-left: 30px;
+.input-type11{
+   border: none;
+   background: transparent;
 }
+.input-type1{
+    width: 30px;
+    margin-left: 30px;
+ }
 .input-type2{
     width: 80px;
     margin-left: 30px;
+    border: none;
+    background: transparent;
  }
  .input-type3{
     width: 450px;

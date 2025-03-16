@@ -50,6 +50,7 @@
     height: 20px;
     margin-top: 20px;
     margin-left: 70px;
+    border: none;
 }
 .login-button{
     background-color: lightgreen;
@@ -227,6 +228,7 @@
     }
     .logout-button{
         display: none;
+
     }
     .login-button{
         display: none;
