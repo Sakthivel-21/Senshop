@@ -47,7 +47,7 @@ function Dashboard() {
         
           <p className='dash-1'>Total Price: {booking.places.price}</p>
         
-          <p className='dash-1'>Delievery Date: {format(new Date(booking.places.delieveryDate), "yyyy-MM-dd")}</p>
+          <p className='dash-1'>Delievery Date: {format(new Date(booking.places.delieveryDate), "EEEE , yyyy-MM-dd")}</p>
         
 
    </div></Link>

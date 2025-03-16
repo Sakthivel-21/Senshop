@@ -2,7 +2,9 @@ import React,{useEffect, useState, useContext} from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import sidebar from '../../Images/side.png'
-import grocery from '../../Images/grocery.jpg'
+import grocery1 from '../../Images/g-4.avif'
+import grocery2 from '../../Images/g-2.webp'
+
 import axios from 'axios'
 import {AuthContext} from '../UserContext'
 import AOS from 'aos';
@@ -78,9 +80,12 @@ function Navbar() {
 <div className='navbars'>
 
 <div className='nav-images'>
-    <img src={grocery} alt=''></img>
+    <img src={grocery1} alt='' className='grocery-1'></img>
+    
 </div>
 </div>
+
+<img src={grocery2} alt='' className='grocery-2'></img>
 
 <div className='light-dry'>
 
@@ -118,7 +123,7 @@ function Navbar() {
 <h3>We are delighted to serve You with <br/>
     fresh, oragnic and high quality grocries <br/>
     to your doorstep. Happy Shopping!</h3>
-    <button className='shop-btn'>Shop now</button>
+    <Link to='/productsItems'><button className='shop-btn'>Shop now</button></Link>
 </div>
 
 {
