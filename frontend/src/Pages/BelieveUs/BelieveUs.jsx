@@ -13,7 +13,7 @@ function BelieveUs() {
 
     <div className='believe-content'>
 
-    <div className='believeus' >
+    <div className='believeus-1' >
 
         <div className='believe-1' data-aos="flip-left">
            <h3 className='heads'>Fresh & Organic Produce</h3>
@@ -30,26 +30,33 @@ function BelieveUs() {
              <p className='point'>Groceries, dairy, snacks, and more under one roof</p>
         </div>
 
-        <div className='believe-4' data-aos="flip-left">
-              <h3 className='heads'>Home Delievery</h3>
-              <p className='point'>Convenient Shopping from the comfort of your home</p>
-        </div>
+    </div>
 
-        <div className='believe-5'data-aos="flip-left">
-              <h3 className='heads'>Customer Satisfication</h3>
-              <p className='point'>Your happiness is our priority</p>
-        </div>
- 
-        <div className='believe-6' data-aos="flip-left">
-              <h3 className='heads'>Our goal</h3>
-              <p className='point'>Provide a seamless Shopping Experience</p>
-        </div>
+    
 
         <div className='believeus-2' data-aos="flip-right">
             <img src={img1} alt=''></img>
         </div>
 
-        </div>
+        <div className='believeus-3' >    
+
+<div className='believe-4' data-aos="flip-left">
+      <h3 className='heads'>Home Delievery</h3>
+      <p className='point'>Convenient Shopping from the comfort of your home</p>
+</div>
+
+<div className='believe-5'data-aos="flip-left">
+      <h3 className='heads'>Customer Satisfication</h3>
+      <p className='point'>Your happiness is our priority</p>
+</div>
+
+<div className='believe-6' data-aos="flip-left">
+      <h3 className='heads'>Our goal</h3>
+      <p className='point'>Provide a seamless Shopping Experience</p>
+</div>
+
+</div>  
+        
 
     </div>
     </>

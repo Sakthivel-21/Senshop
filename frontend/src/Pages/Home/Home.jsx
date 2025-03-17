@@ -5,6 +5,7 @@ import AboutPage from '../AboutPage/AboutPage'
 import ListItems from '../ListItems/ListItems'
 import BelieveUs from '../BelieveUs/BelieveUs'
 import Contact from '../Contact/Contact'
+import OurItems from '../OurItems/OurItems'
 
 
 function Home() {
@@ -15,7 +16,7 @@ function Home() {
       
       <Navbar/>
      <AboutPage/>
-     <ListItems/>
+     <OurItems/>
      <BelieveUs/>
       <Contact/>
       

@@ -33,14 +33,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 1400px;
-    height: 500px;
+    height: 451px;
     border: 1px solid black;
     margin-left: 50px;
     margin-top: 50px;
 }
-.believeus{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.believeus-1{
+    
     width: 800px;
     height: 500px;
    
@@ -50,15 +49,15 @@
 .believeus-2{
     width: 480px;
     height: 500px;
-    background-color:black;
+  
     position: absolute;
-    margin-left: 900px;
+    margin-left: 470px;
     
 }
 .believeus-2 img{
-    width: 479px;
-    height: 500px;
-    margin-left: 1px;
+    width: 450px;
+    height: 450px;
+    
 }
 
 
@@ -67,7 +66,7 @@
     width: 400px;
     height: 100px;
     background-color: lightgreen;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 30px;
     
 }
@@ -82,7 +81,7 @@
     width: 400px;
     height: 100px;
     background-color: lightgreen;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 30px;
     
 }
@@ -91,24 +90,25 @@
     height: 100px;
     background-color:lightgreen;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 130px;
     
 }
 .believe-5{
     width: 400px;
     height: 100px;
     background-color:#90EE90;
-    margin-left: 50px;
+    margin-left: 130px;
     margin-top: 30px;
 }.believe-6{
     width: 400px;
     height: 100px;
     background-color: lightgreen;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 130px;
 }
 .heads{
     text-align: center;
+    padding-top: 10px;
 }
 .point{
     text-align: center;
@@ -128,18 +128,25 @@
 
 @media  screen and (max-width: 360px) {
     .believe-content{
-        margin-top: 50px;
+        margin-top: 0px;
         display: block;
         width: 90%;
         margin-left: 10px;
         height: 810px;
+        border: none;
     }
     .head{
         padding-top: 30px;
     }
-    .believeus{
+    .believeus-1{
         display: block;
         width: 100%;
+    }
+    .believeus-3{
+        display: block;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -130px;
     }
     .believe-1{
         width: 90%;

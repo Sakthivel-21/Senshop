@@ -23,6 +23,8 @@ import Product from './Pages/Product';
 import AdminPanel from './Admin/AdminPanel/AdminPanel';
 import SenshopProducts from './Admin/SenshopProducts/SenshopProducts';
 import PaymentPage from './ProductsData/PaymentPage/PaymentPage';
+import OurItems from './Pages/OurItems/OurItems';
+import BelieveUs from './Pages/BelieveUs/BelieveUs';
 
 
 
@@ -58,6 +60,8 @@ return (
       <Route path='/adminpanel' element={<AdminPanel/>}></Route>
       <Route path='/senshopproducts' element={<SenshopProducts/>}></Route>
       <Route path='/paymentpage/:id' element={<PaymentPage/>}></Route>
+      <Route path='/ouritems' element={<OurItems/>}></Route>
+      <Route path='/believeus' element={<BelieveUs/>}></Route>
    </Routes>
    <Footer/>
    </Router>
