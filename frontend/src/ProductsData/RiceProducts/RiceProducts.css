@@ -12,13 +12,14 @@
 }
 .rice-products{
     width: 79%;
-    height: 42%;
+    height: 40%;
     margin-left: 80px;
     margin-top: 50px;
     transition: transform 0.2s ease-in-out;
     display: grid;
     grid-template-columns: repeat(3fr, 1);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid lightgreen;
 }
 .rice-products:hover{
     transform: scale(1.1);
@@ -36,12 +37,14 @@
     padding-left: 10px;
     font-size: 16px;
     text-align: center;
+    padding-top: -10px;
 }
 .rice-products-price p{
     text-decoration: line-through;
     display: inline-block;
     padding-left: 50px;
     margin-bottom: 7px;
+    padding-top: -10px;
 }
 .rice-products-price h3{
     display: inline-block;
@@ -50,8 +53,8 @@
 }
 .rice-products-price{
     width: 300px;
-    height: 130px;
-    background-color: lightgreen;
+    height: 100px;
+   
     margin-top: 20px;
 }
 .rice-products-price h2{
@@ -80,9 +83,10 @@
     }
     .rice-products{
         width:100%;
-        height: 300px;
+        height: 260px;
         margin-left: 10px;
         margin-top: 50px;
+        border: 1px solid lightgreen;
     }
     .rice-products img{
         width: 100px;
@@ -92,7 +96,7 @@
     }
     .rice-products-price{
         width: 100%;
-        height: 160px;
+        height: 120px;
       
     }
     .rice-products-price p{

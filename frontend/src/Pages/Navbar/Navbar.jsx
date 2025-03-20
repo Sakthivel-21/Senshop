@@ -1,7 +1,7 @@
 import React,{useEffect, useState, useContext} from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
-import sidebar from '../../Images/side.png'
+import sidebar from '../../Images/sided.png'
 import grocery1 from '../../Images/g-4.avif'
 import grocery2 from '../../Images/g-2.webp'
 

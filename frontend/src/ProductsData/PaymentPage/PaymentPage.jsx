@@ -102,18 +102,25 @@ const fetchPost  = async (e) => {
             <div className="payment-options">
             <h3 >Payment Options</h3>
             <hr className='hr-lined'/>
+
+            
        
 
          <div >
          <form onSubmit={fetchPost}>
-         <label className="form-1">
+
+        <div>
         <input type="checkbox" checked={isCOD} onChange={handleCheckboxChange} className='input-book'/>
-        Pay with Gpay
-        </label>
-        <label  className="form-2">
+       
+         <label className="form-1">Pay with Gpay</label>
+
+         </div>
+
+         <div>
         <input type="checkbox" checked={isCOD} onChange={handleCheckboxChange} className='input-book'/>
-        Cash On Delievery
-        </label>
+        
+        <label  className="form-2">Cash On Delievery</label>
+        </div>
       
         <button type='submit' className='btn-book'>Submit</button>
         </form>
