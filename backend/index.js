@@ -13,14 +13,15 @@ const bcryptSalt = bcrypt.genSaltSync(10)
 const jwtSecret = "sjnvkffjskghnrxm"
 const cookieparser = require('cookie-parser')
 const multer = require('multer')
-const uploadMiddleware = multer({dest: 'uploads/' })
+const cloudinary = require("cloudinary").v2
+//const uploadMiddleware = multer({dest: 'uploads/' })
 const fs = require('fs')
 const Stripe = require("stripe");
 const path = require("path");
 const stripe = Stripe("sk_test_51QwK6XQFCTgqXGipJIDTppb5M3xFjKPkmusojMlE9YMv3N9eF2dqe9NopvTkD2M0Xmd5DfErcoc0FiyTC1o6lMwe00WluuwsyV");
 require('dotenv').config();
 const MONGO_URL = 'mongodb+srv://sakthivelkalidass:cMounVHTZbigQDIy@senshop.tfixn.mongodb.net/senshop?retryWrites=true&w=majority'
-const alllowedOrigins = process.env.FRONTEND_URL
+
 
 mongoose.connect(MONGO_URL, {
     serverSelectionTimeoutMS: 50000,
@@ -41,7 +42,7 @@ app.use(express.json())
 
 app.use(cookieparser())
 
-app.use('/uploads', express.static(path.join(__dirname , 'uploads')));
+//app.use('/uploads', express.static(path.join(__dirname , 'uploads')));
 
 app.use(cors({
     origin: "https://senshop-frontend-six.vercel.app",
@@ -126,22 +127,49 @@ function getUserDataform (req) {
     })
 }
 
-app.post('/productform', uploadMiddleware.single('file'),(req, res) => {
-    if(req.file) { 
-        const {originalname, path} = req.file;
-        const parts = originalname.split('.');
-        const ext = parts[parts.length -1];
-        newPath = path+'.'+ext;
-        fs.renameSync(path, newPath)
-    }
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
+})
+
+
+
+console.log(new Date().toLocaleString());
+console.log(new Date().toISOString());
+
+const storage = multer.diskStorage({});
+const upload = multer({ storage });
+
+
+app.post('/productform', upload.single('image'),async (req, res) => {
+
+    try{
+    
+    if(!req.file) {
+        return res.status(400).json({error: "no file uploaded"})
+       }
 
     const {name, category, price, discountprice, stock, description} = req.body;
 
+    const file = req.file;
+
+    const timestamp = Math.floor(Date.now()/1000)
+
+    const result = await cloudinary.uploader.upload(file.path , {timestamp});
+    fs.unlinkSync(file.path);
+
     const productDoc = productModel.create({
         name, category, price, discountprice, stock, description,
-        image: newPath
+        image: result.secure_url,
     })
+    console.log("Fetched data:" , JSON.stringify(productDoc, null , 2))
     res.json(productDoc)
+   }
+   catch (error) {
+    console.error("Fetched data error:" ,JSON.stringify(error, null , 2))
+    res.status(500).json({error:"internal server error"})
+ }
 })
   
 app.get('/riceproductlist', async (req, res) => {

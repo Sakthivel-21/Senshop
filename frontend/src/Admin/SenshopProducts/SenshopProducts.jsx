@@ -49,7 +49,7 @@ function SenshopProducts() {
         <div className='senshopproducts-products'>
               
            
-             <img src={'http://localhost:3001/'+(product.image)} alt=''></img>
+             <img src={product.image} alt=''></img>
              <h2 >{product.category}</h2>
              <h3>${product.discountprice} Only</h3>
              <p>${product.price}</p>

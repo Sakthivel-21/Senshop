@@ -13,24 +13,31 @@ const ProductsForm = () => {
   const [discountprice,setDiscountprice] = useState('')
   const [stock, setStock] = useState('')
   const [description, setDescription] = useState('')
-  const [files, setFiles] = useState('')
+  const [image, setImage] = useState(null);
+  const [preview, setPreview] = useState(null);
 
   axios.defaults.withCredentials= true;
 
- 
+  const handleFileChange = (e) => {
+    setImage(e.target.files[0]);
+    setPreview(URL.createObjectURL(e.target.files[0]));
+  };
 
   const handleSubmit =  (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.set('name', name);
-    formData.set('category', category);
-    formData.set('price', price);
-    formData.set('discountprice', discountprice);
-    formData.set('stock', stock);
-    formData.set('description', description);
-    formData.set('file', files?.[0]);
+    formData.append('name', name);
+    formData.append('category', category);
+    formData.append('price', price);
+    formData.append('discountprice', discountprice);
+    formData.append('stock', stock);
+    formData.append('description', description);
+    formData.append("image", image);
 
-    axios.post(`${process.env.REACT_APP_API_URL}/productform`, formData)
+
+    axios.post(`${process.env.REACT_APP_API_URL}/productform`, formData , {
+      headers: {"Content-Type" : "multipart/form-data"}
+     })
     .then(user => {console.log(user)
       navigate('/senshopproducts')
     })
@@ -62,7 +69,8 @@ const ProductsForm = () => {
         <textarea name="description" onChange={(e => setDescription(e.target.value))} required></textarea>
 
         <label>Upload Image:</label>
-        <input type="file" name="files" accept="image/*" onChange={(e => setFiles(e.target.files))} required />
+        <input type="file" accept="image/*" onChange={handleFileChange} required />
+        {preview && <img src={preview} alt="Preview" width="50" />}
 
         <button type="submit">Add Product</button>
       </form>
