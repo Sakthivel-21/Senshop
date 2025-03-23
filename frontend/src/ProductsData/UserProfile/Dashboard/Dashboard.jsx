@@ -41,7 +41,7 @@ function Dashboard() {
    <Link to={`/bookingpage/${booking._id}`} className='dashboard-link'><div className='dashboard-container'>
 
         
-          <img src={'http://localhost:3001/'+(booking.places.place.image)} alt=''></img>
+          <img src={booking.places.place.image} alt=''></img>
 
           <p className='dash-category'>Category:  {booking.places.place.category}</p>
         

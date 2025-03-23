@@ -82,7 +82,7 @@ const fetchPost  = async (e) => {
                  <div className='delievery-details2'>
                     <div className='delievery-details2-left'>
                        
-                        <img src={`${process.env.REACT_APP_API_URL}/${user.place.image}`} alt=''></img>
+                        <img src={user.place.image} alt=''></img>
                     </div>
                     
                     <div className='delievery-details2-right'>
@@ -107,6 +107,7 @@ const fetchPost  = async (e) => {
        
 
          <div >
+
          <form onSubmit={fetchPost}>
 
         <div>
@@ -122,8 +123,9 @@ const fetchPost  = async (e) => {
         <label  className="form-2">Cash On Delievery</label>
         </div>
       
-        <button type='submit' className='btn-book'>Submit</button>
+        <button type='submit' className='btn-books'>Submit</button>
         </form>
+
          </div>
         </div>
       

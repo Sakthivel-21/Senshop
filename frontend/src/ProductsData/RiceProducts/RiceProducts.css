@@ -43,13 +43,13 @@
     text-decoration: line-through;
     display: inline-block;
     padding-left: 50px;
-    margin-bottom: 7px;
+    padding-bottom: 7px;
     padding-top: -10px;
 }
 .rice-products-price h3{
     display: inline-block;
     padding-left: 50px;
-    margin-bottom: 7px;
+    padding-bottom: 7px;
 }
 .rice-products-price{
     width: 300px;

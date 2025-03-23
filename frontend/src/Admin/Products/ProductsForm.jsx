@@ -70,7 +70,7 @@ const ProductsForm = () => {
 
         <label>Upload Image:</label>
         <input type="file" accept="image/*" onChange={handleFileChange} required />
-        {preview && <img src={preview} alt="Preview" width="20" />}
+        {preview && <img src={preview} alt="Preview" width="20" className="pre-img"/>}
 
         <button type="submit">Add Product</button>
       </form>
