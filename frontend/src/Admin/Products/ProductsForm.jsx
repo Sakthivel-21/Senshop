@@ -63,7 +63,7 @@ const ProductsForm = () => {
         <input type="number" name="discountprice" onChange={(e => setDiscountprice(e.target.value))} required />
 
         <label>Stock Quantity:</label>
-        <input type="number" name="stock" onChange={(e => setStock(e.target.value))} required />
+        <input type="text" name="stock" onChange={(e => setStock(e.target.value))} required />
 
         <label>Description:</label>
         <textarea name="description" onChange={(e => setDescription(e.target.value))} required></textarea>
