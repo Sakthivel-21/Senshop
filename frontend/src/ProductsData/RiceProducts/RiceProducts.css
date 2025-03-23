@@ -11,8 +11,8 @@
     display: inline-block;
 }
 .rice-products{
-    width: 79%;
-    height: 45%;
+    width: 300px;
+    height: 420px;
     margin-left: 80px;
     margin-top: 50px;
     transition: transform 0.2s ease-in-out;
@@ -20,6 +20,7 @@
     grid-template-columns: repeat(3fr, 1);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border: 1px solid lightgreen;
+    border-radius: 5px ;
 }
 .rice-products:hover{
     transform: scale(1.1);
@@ -46,18 +47,19 @@
     padding-left: 50px;
 }
 .rice-products-price h3{
-    
+    display: inline-block;
     padding-left: 50px;
 }
 .rice-products-price{
     width: 300px;
-    height: 100px;
-   
+    height: 130px;
+    
     margin-top: 20px;
 }
 .rice-products-price h2{
     text-align: center;
 }
+
 .hr-line{
     background-color: lightgreen;
     height: 2px;
