@@ -29,6 +29,8 @@
     display: grid;
     grid-template-columns: repeat(3fr, 1);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid lightgreen;
+    border-radius: 5px ;
 }
 .pulse-products:hover{
     transform: scale(1.1);
@@ -59,7 +61,7 @@
 .pulse-products-price{
     width: 300px;
     height: 130px;
-    background-color: lightgreen;
+    
     margin-top: 20px;
 }
 .pulse-products-price h2{

@@ -40,27 +40,25 @@ function RiceProducts({searchTerm}) {
     <hr className='hr-line'/>
       
         
-{
-    user.map(product => (
-     <Link to={`/productsDetails/${product._id}`} className='rice-link'><div className='rices'>
+ {
+        user.map(product => (
+           <Link to={`/productsDetails/${product._id}`} className='rice-link'><div className='rices'>
 
-<div className='rice-products'>
+    <div className='rice-products'>
 
-   
-    <img src={product.image} alt=''></img>
-   
-    <div className='rice-products-price'>
-     <h3 className='cate'>{product.category}</h3>
-     <p >${product.price} </p>
-     <h2 >{product.discountprice}</h2>
+       
+        <img src={product.image} alt=''></img>
+       
+        <div className='rice-products-price'>
+         <h2 className='cate'>{product.category}</h2>
+         <p>${product.price}</p>
+         <h3>${product.discountprice} Only</h3>
+         </div> 
+         
+
     </div>
-
-    </div> 
-     
-
-
-</div></Link> 
-))}
+    </div></Link>
+    ))}
 
 <hr style={{marginTop:50}}/>
 
