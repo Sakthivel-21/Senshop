@@ -47,18 +47,18 @@
     margin-left: 50px;
 }
 .Product-details-1 img{
-    width: 400px;
-    height: 450px;
+    width: 300px;
+    height: 350px;
     margin-left: 130px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .Product-details-1 p{
     padding-left: 130px;
-    width: 400px;
+    width: 300px;
 }
 .Product-details-1 h3{
     padding-left: 130px;
-    width: 400px;
+    width: 300px;
 }
 .rate-btn{
     display:flex;
@@ -95,6 +95,7 @@
 .input-type11{
    border: none;
    background: transparent;
+   margin-left: 15px;
 }
 .input-type1{
     width: 30px;
@@ -103,6 +104,12 @@
 .input-type2{
    
     margin-left: 30px;
+    border: none;
+    background: transparent;
+ }
+ .input-type22{
+   
+    margin-left: 60px;
     border: none;
     background: transparent;
  }
@@ -147,7 +154,7 @@
     .Product-details-2{
         width: 90%;
         margin-left: 15px;
-        margin-top: -340px;
+        margin-top: -420px;
         margin-right: 15px;
     }
     .input-type3{

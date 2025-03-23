@@ -25,7 +25,7 @@ h2 {
 
 .payment-options{
     width: 1480px;
-    height: 350px;
+    height: 170px;
     margin-top: 50px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 15px;
@@ -37,6 +37,8 @@ h2 {
 .btn-books{
     background-color: lightgreen;
     border: none;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 @media  screen and (max-width: 360px) {

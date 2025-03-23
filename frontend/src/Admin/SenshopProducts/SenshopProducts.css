@@ -67,16 +67,16 @@
 .senshopproducts-products p{
     text-decoration: line-through;
     display: inline-block;
-    padding-left: 50px;
-    padding-top: -15px;
+    padding-left: 55px;
+    padding-top: -20px;
     position: absolute;
     padding-left: 900px;
 }
 .senshopproducts-products h3{
     display: inline-block;
-    padding-top: -15px;
+    padding-top: -22px;
     position: absolute;
-    padding-left: 620px;
+    padding-left: 630px;
 }
 
 .senshopproducts-products h2{
@@ -100,11 +100,11 @@
     }
     .senshopproducts-products{
         width: 100%;
-        height: 120px;
+        height: 100px;
         display: block;
         margin-top: 10px;
         margin-right: 10px;
-        background-color: lightgrey;
+        background-color:lightcyan;
         margin-left: 0px;
     }
     .senshopproducts-products:hover{
@@ -112,7 +112,7 @@
     }
     .senshopproducts-products img{
        margin-left: 20px;
-       margin-top: 20px;
+       margin-top: 10px;
        height: 70px;
     }
     

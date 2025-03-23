@@ -78,8 +78,8 @@
     
 }
 .delievery-details2-left img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 250px;
     margin-left: 25px;
     margin-top: 25px;
 }
@@ -150,7 +150,7 @@
         margin-left: 10px;
      }
      .delievery-details2-left img{
-        margin-left:25%;
+        margin-left:15%;
      }
      .payment-details{
         margin-top: 30px;
@@ -162,7 +162,7 @@
      }
      .order-summary{
         width: 90%;
-        margin-left: 10px;
+       
      }
      .order-sucess{
         margin-left: 10px;

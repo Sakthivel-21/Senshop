@@ -126,7 +126,7 @@ function ProductDetails() {
            
            <div className='product-order'>
            <label>Delievery Date: </label>
-            <p className='input-type2'>{format(new Date(delieveryDate), "EEEE , yyyy-MM-dd")}</p>
+            <p className='input-type22'>{format(new Date(delieveryDate), "EEEE , yyyy-MM-dd")}</p>
            </div>
 
            <div className='product-order' >
