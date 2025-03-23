@@ -47,16 +47,18 @@ function RiceProducts({searchTerm}) {
 <div className='rice-products'>
 
    
-     <img src={product.image} alt=''></img>
+    <img src={product.image} alt=''></img>
    
     <div className='rice-products-price'>
      <h3 className='cate'>{product.category}</h3>
-     <p>${product.price}</p>
-     <h3>${product.price} <span className='span-price'>${product.discountprice} Only</span></h3>
-     </div> 
+     <p >${product.price} </p>
+     <h2 >{product.discountprice}</h2>
+    </div>
+
+    </div> 
      
 
-</div>
+
 </div></Link> 
 ))}
 
