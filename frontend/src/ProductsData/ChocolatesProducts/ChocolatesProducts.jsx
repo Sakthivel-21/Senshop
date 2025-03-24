@@ -34,8 +34,10 @@ function ChocolatesProducts() {
     <>
     <SetNavbar/>
     <ProductsItems/>
-    <input type='text' placeholder='search here...' className='search' onChange={(e) => handleChange(e.target.value)}></input>
-    <h2 className='chocolates-head'>Sweetest Chocolates</h2>
+    <center>
+    <input type='text' placeholder='search here...' className='search' onChange={(e) => handleChange(e.target.value)}></input></center>
+   
+     <h2 className='chocolates-head'>Sweetest Chocolates</h2>
     <hr className='hr-line'/>
       
         

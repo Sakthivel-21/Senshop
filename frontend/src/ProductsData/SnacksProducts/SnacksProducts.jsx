@@ -33,7 +33,8 @@ function SnacksProducts() {
   
     <SetNavbar/>
     <ProductsItems/>
-    <input type='text' placeholder='search here...' className='search' onChange={(e) => handleChange(e.target.value)}></input>
+    <center>
+    <input type='text' placeholder='search here...' className='search' onChange={(e) => handleChange(e.target.value)}></input></center>
     <h2 className='snacks-head'>Snacks Items</h2>
     <hr className='hr-line'/>
         
