@@ -12,7 +12,7 @@
 }
 .personalCare-products{
     width: 300px;
-    height: 420px;
+    height: 480px;
     margin-left: 80px;
     margin-top: 50px;
     transition: transform 0.2s ease-in-out;
@@ -61,7 +61,12 @@
     background-color: lightgreen;
     border: none;
     padding: 7px;
-    margin-left: 120px;
+    margin-left: 110px;
+}
+.search{
+    margin-top: 40px;
+    width: 250px;
+    border-radius: 100px;
 }
 
 @media  screen and (max-width: 360px)  {
@@ -90,7 +95,7 @@
         display: none;
     }
     .personalCare-products-price h3{
-        text-align: center;
+        padding-left: 30px;
         margin-top: -35px;
     }
     .personalCare-products-price button{

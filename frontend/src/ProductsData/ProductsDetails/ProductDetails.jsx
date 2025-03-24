@@ -104,7 +104,7 @@ function ProductDetails() {
            <form className='product-form' onSubmit={fetchPost}>
            <h2>Order Now</h2>
            <div className='product-order'>
-           <label>Quantity:{user.stock}</label>
+           <label>Quantity: <span style={{paddingLeft:10}}>{user.stock}</span></label>
           
            </div>
 

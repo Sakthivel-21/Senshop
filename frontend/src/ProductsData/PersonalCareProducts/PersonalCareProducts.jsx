@@ -33,7 +33,9 @@ function PersonalCareProducts() {
     <>
     <SetNavbar/>
     <ProductsItems/>
-    <input type='text' placeholder='search here...' className='search' onChange={(e) => handleChange(e.target.value)}></input>
+
+    <center>
+    <input type='text' placeholder='search here...' className='search' onChange={(e) => handleChange(e.target.value)}></input></center>
     <h2 className='personalCare-head'>Personal Care Things</h2>
     <hr className='hr-line'/>
       
@@ -49,8 +51,8 @@ function PersonalCareProducts() {
            
             <div className='personalCare-products-price'>
              <h2 className='cate'>{product.category}</h2>
-             <p>${product.price}</p>
-             <h3>${product.discountprice} Only</h3>
+             <p>RS{product.price}</p>
+             <h3>RS{product.discountprice} Only</h3>
              <button >Order now</button>
              </div> 
              
