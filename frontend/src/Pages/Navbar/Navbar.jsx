@@ -100,7 +100,7 @@ function Navbar() {
     <div className='nav-pointing'>
       <ul>
         <Link to='/' className='nav-linking'><li >Home</li></Link>
-        <Link to='/productsItems' className='nav-linking'><li>Products</li></Link>
+        <Link to='/pulseproducts' className='nav-linking'><li>Products</li></Link>
         <Link to='/contact' className='nav-linking'><li>Contacts</li></Link>
       </ul>
 

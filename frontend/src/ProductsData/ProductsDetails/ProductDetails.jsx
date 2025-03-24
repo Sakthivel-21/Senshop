@@ -115,7 +115,7 @@ function ProductDetails() {
            
            <div className='product-order'>
            <label>Delievery address:</label>
-           <input type='string' placeholder='Provide Your Deleivery Address' className='input-type3' value={address}  onChange={(e) => setAddress(e.target.value)}></input>
+           <input type='string' placeholder='Provide Your Delievery Address' className='input-type3' value={address}  onChange={(e) => setAddress(e.target.value)}></input>
            </div>
 
            <div className='product-order'>

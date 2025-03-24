@@ -92,7 +92,7 @@ const fetchPost  = async (e) => {
                          <p>Order Date : {format(new Date(user.orderDate), "EEEE, yyyy-MM-dd")}</p>
                          <p>Delievery Date : {format(new Date(user.delieveryDate), "EEEE, yyyy-MM-dd")}</p>
                          <p>Delievery Charge  : Free</p>
-                         <p>Price ({user.pack}) item : $ {user.price}</p>
+                         <p>Price ({user.pack}) item :RS {user.price}</p>
                     </div>
                  </div>
         

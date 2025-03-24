@@ -50,7 +50,7 @@ function PersonalCareProducts() {
         <img src={product.image} alt=''></img>
            
         <div className='personalcare-products-price'>
-             <h2>{product.category}</h2>
+             <h2 className='cate'>{product.category}</h2>
              <p>RS{product.price}</p>
              <h3>RS{product.discountprice} Only</h3>
              
