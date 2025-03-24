@@ -36,7 +36,7 @@ function PersonalCareProducts() {
 
     <center>
     <input type='text' placeholder='search here...' className='search' onChange={(e) => handleChange(e.target.value)}></input></center>
-    <h2 className='personalCare-head'>Personal Care Things</h2>
+    <h2 className='personalcare-head'>Personal Care Things</h2>
     <hr className='hr-line'/>
       
         
@@ -50,7 +50,7 @@ function PersonalCareProducts() {
         <img src={product.image} alt=''></img>
            
         <div className='personalcare-products-price'>
-             <h2 >{product.category}</h2>
+             <h2>{product.category}</h2>
              <p>RS{product.price}</p>
              <h3>RS{product.discountprice} Only</h3>
              
