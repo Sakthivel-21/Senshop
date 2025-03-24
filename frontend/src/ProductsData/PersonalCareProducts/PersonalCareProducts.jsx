@@ -44,12 +44,12 @@ function PersonalCareProducts() {
             user.map(product => (
                <Link to={`/productsDetails/${product._id}`} className='personalcare-link'><div className='personalCare'>
 
-        <div className='personalCare-products'>
+        <div className='personalcare-products'>
 
            
         <img src={product.image} alt=''></img>
            
-        <div className='personal-products-price'>
+        <div className='personalcare-products-price'>
              <h2 >{product.category}</h2>
              <p>RS{product.price}</p>
              <h3>RS{product.discountprice} Only</h3>
