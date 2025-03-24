@@ -57,6 +57,12 @@
 .chocolates-products-price h2{
     text-align: center;
 }
+.search{
+    margin-top: 40px;
+    width: 250px;
+    border-radius: 100px;
+    padding: 5px;
+}
 
 @media  screen and (max-width: 360px)  {
     .chocolates{

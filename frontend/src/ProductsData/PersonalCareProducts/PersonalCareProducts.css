@@ -12,7 +12,7 @@
 }
 .personalCare-products{
     width: 300px;
-    height: 480px;
+    height: 350px;
     margin-left: 80px;
     margin-top: 50px;
     transition: transform 0.2s ease-in-out;
@@ -27,37 +27,29 @@
 }
 .personalCare-products img{
     width: 200px;
-    height: 250px;
+    height: 200px;
     margin-left: 50px;
     margin-top: 20px;
 }
 
-.personalCare-products h2{
-    
-    padding-right: 10px;
-    padding-left: 10px;
-    font-size: 16px;
-    text-align: center;
-}
-.personalCare-products-price p{
+
+.personalCare-products p{
     text-decoration: line-through;
     display: inline-block;
     padding-left: 50px;
+    padding-top: 10px;
 }
-.personalCare-products-price h3{
+.personalCare-products h3{
     display: inline-block;
     padding-left: 50px;
+    padding-top: 10px;
 }
-.personalCare-products-price{
-    width: 300px;
-    height: 130px;
-    
-    margin-top: 20px;
-}
-.personalCare-products-price h2{
+
+.personalCare-products h2{
     text-align: center;
+    padding-top: 15px;
 }
-.personalCare-products-price button{
+.personalCare-products button{
     background-color: lightgreen;
     border: none;
     padding: 7px;
@@ -67,6 +59,7 @@
     margin-top: 40px;
     width: 250px;
     border-radius: 100px;
+    padding: 5px;
 }
 
 @media  screen and (max-width: 360px)  {
@@ -87,18 +80,18 @@
         margin-left: 20px;
         margin-right: 10px;
     }
-    .personalCare-products-price{
+    .personalCare-products{
         width: 100%;
         height: 160px;
     }
-    .personalCare-products-price p{
+    .personalCare-products p{
         display: none;
     }
-    .personalCare-products-price h3{
+    .personalCare-products h3{
         padding-left: 30px;
         margin-top: -35px;
     }
-    .personalCare-products-price button{
+    .personalCare-products button{
         margin-left: 30px;
     }
 }
