@@ -51,8 +51,8 @@ function SenshopProducts() {
            
              <img src={product.image} alt=''></img>
              <h2 >{product.category}</h2>
-             <h3>${product.discountprice} Only</h3>
-             <p>${product.price}</p>
+             <h3>RS {product.discountprice} Only</h3>
+             <p>RS {product.price}</p>
             
            
              
