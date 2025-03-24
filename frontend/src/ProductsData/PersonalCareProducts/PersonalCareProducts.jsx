@@ -42,7 +42,7 @@ function PersonalCareProducts() {
         
         {
             user.map(product => (
-               <Link to={`/productsDetails/${product._id}`} className='personalcare-link'><div className='personalCare'>
+               <Link to={`/productsDetails/${product._id}`} className='personalcare-link'><div className='personalcare'>
 
         <div className='personalcare-products'>
 
