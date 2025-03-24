@@ -41,7 +41,7 @@
 }
 .personalCare-products h3{
     display: inline-block;
-   text-align: centre;
+   text-align: center;
     padding-top: 10px;
 }
 
@@ -53,7 +53,7 @@
     background-color: lightgreen;
     border: none;
     padding: 7px;
-    margin-left: 110px;
+    margin-left: 40px;
 }
 .search{
     margin-top: 40px;
@@ -85,9 +85,10 @@
     }
     .personalCare-products h3{
         padding-left: 20px;
-        margin-top: -25px;
+        padding-top: 10px;
+        text-align: center;
     }
     .personalCare-products button{
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
