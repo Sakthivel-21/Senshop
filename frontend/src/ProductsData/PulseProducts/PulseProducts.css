@@ -95,7 +95,7 @@
         display: none;
     }
     .pulse-products-price h3{
-        padding-left: 30px;
+        text-align: center;
         margin-top: -35px;
     }
 }

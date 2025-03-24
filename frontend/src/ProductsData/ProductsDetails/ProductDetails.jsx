@@ -104,8 +104,8 @@ function ProductDetails() {
            <form className='product-form' onSubmit={fetchPost}>
            <h2>Order Now</h2>
            <div className='product-order'>
-           <label>Quantity:
-           <input type='number'  value={user.stock} className='input-type11'></input> </label>
+           <label>Quantity:{user.stock}</label>
+          
            </div>
 
            <div className='product-order'>

@@ -51,9 +51,10 @@ function PersonalCareProducts() {
              <h2 className='cate'>{product.category}</h2>
              <p>${product.price}</p>
              <h3>${product.discountprice} Only</h3>
+             <button >Order now</button>
              </div> 
              
-
+            
         </div>
         </div></Link>
         ))}
