@@ -330,7 +330,8 @@ app.get('/userorders', async (req, res) => {
         const product = await payModel.find().populate({
             path:'places', 
             populate: {
-                path: 'place'
+                path: 'place',
+                model: 'ProductModel'
         }}).populate('user')
         res.json(product)
     }
