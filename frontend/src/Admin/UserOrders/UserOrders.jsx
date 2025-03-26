@@ -14,7 +14,7 @@ function UserOrders() {
 
   
       useEffect (() => {
-          axios.get(`${process.env.REACT_APP_API_URL}/dashboard`)
+          axios.get(`${process.env.REACT_APP_API_URL}/userorders`)
              .then((response) => {
                setUser(response.data);
              })

@@ -324,6 +324,22 @@ app.get('/senshopproducts', async (req, res) => {
     }
 })
 
+app.get('/userorders', async (req, res) => {
+
+    try {
+        const product = await payModel.find()
+        .populate({
+            path:'places', 
+            populate: {
+                path: 'place'
+        }}).populate('user')
+        res.json(product)
+    }
+    catch (err) {
+        res.json(err)
+    }
+})
+
  
 app.post("/create-payment-intent", async (req, res) => {
     try {
