@@ -12,13 +12,13 @@
  
 }
 .adminpanel-left button{
-    width: 130px;
+    
     border: none;
     background: transparent;
     background-color: white;
-    padding: 5px;
+   
     margin-top: 15px;
-    margin-left: 35px;
+    
 }
 .adminpanel-left h2{
     padding-left: 15px;
