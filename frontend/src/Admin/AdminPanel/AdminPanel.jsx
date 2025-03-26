@@ -22,9 +22,9 @@ function AdminPanel() {
         <div className='adminpanel-left'>
               <h2>Adminpanel</h2>
 
-              <button onClick={() => navigate("/adminpanel/productform")}>Add Items</button>
-              <button onClick={() => navigate("/adminpanel/senshopproducts")}>Senshop products</button>
-              <button onClick={() => navigate("/adminpanel/userorder")}>User's Orders</button>
+              <button onClick={() => navigate("/adminpanel/productform")}>➡️ Add Items</button>
+              <button onClick={() => navigate("/adminpanel/senshopproducts")}>➡️ Senshop products</button>
+              <button onClick={() => navigate("/adminpanel/userorders")}>➡️ User's Orders</button>
              
 
               <Link to='/'><button onClick={logout} className='logout-code'>Logout</button></Link>

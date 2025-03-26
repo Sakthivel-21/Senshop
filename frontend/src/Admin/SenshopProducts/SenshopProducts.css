@@ -7,7 +7,7 @@
     height:700px;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  
     
 }
 .senshoping-2{
@@ -15,8 +15,7 @@
         width: 1300px;
         display: flex;
         flex-direction: column;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    
+       
     
 }
 .product-title{
