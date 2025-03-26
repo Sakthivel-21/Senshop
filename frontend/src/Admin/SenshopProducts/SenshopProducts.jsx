@@ -28,15 +28,7 @@ function SenshopProducts() {
 
     <div className='senshoping'>
 
-      <div className='senshoping-1'>
-             <h2>Adminpanel</h2>
-
-             <Link to='/adminpanel' style={{textDecoration:'none', color:'black'}}> <p>Add Products</p></Link>
-             <p>Senshop products</p>
-
-             <Link to='/'><button onClick={logout} className='logout-code'>Logout</button></Link>
-      </div>
-
+     
       <div className='senshoping-2'>
       <h1 className='product-title'>Senshop Products</h1>
 
