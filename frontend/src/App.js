@@ -25,6 +25,7 @@ import SenshopProducts from './Admin/SenshopProducts/SenshopProducts';
 import PaymentPage from './ProductsData/PaymentPage/PaymentPage';
 import OurItems from './Pages/OurItems/OurItems';
 import BelieveUs from './Pages/BelieveUs/BelieveUs';
+import UserOrders from './Admin/UserOrders/UserOrders';
 
 
 
@@ -46,7 +47,7 @@ return (
       <Route path='/login' element={<Login/>}></Route>
       <Route path='/contact' element={<SetContact/>}></Route>
       <Route path='/productsItems' element={<RiceProducts/>}> </Route>
-      <Route path='/productsform' element={<ProductsForm/>}> </Route>
+      <Route path='/adminpanel' element={<AdminPanel/>}></Route>
       <Route path='/productsDetails/:id' element={<ProductDetails/>}>  </Route>
       <Route path='/riceproducts' element={<RiceProducts/>}></Route>
       <Route path='/pulseproducts' element={<PulseProducts/>}></Route>
@@ -57,11 +58,15 @@ return (
       <Route path='/bookingpage/:id' element={<BookingPage/>}></Route>
       <Route path='/dashboard' element={<Dashboard/>}></Route>
       <Route path='/product' element={<Product/>}></Route>
-      <Route path='/adminpanel' element={<AdminPanel/>}></Route>
-      <Route path='/senshopproducts' element={<SenshopProducts/>}></Route>
       <Route path='/paymentpage/:id' element={<PaymentPage/>}></Route>
       <Route path='/ouritems' element={<OurItems/>}></Route>
       <Route path='/believeus' element={<BelieveUs/>}></Route>
+
+      <Route path='/adminpanel' element={<AdminPanel/>}>
+       <Route path='productform' element={<ProductsForm/>}></Route>
+       <Route path='senshopproducts' element={<SenshopProducts/>}></Route>
+       <Route path='userorders' element={<UserOrders/>}></Route>
+     </Route>
    </Routes>
    <Footer/>
    </Router>
