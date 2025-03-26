@@ -38,8 +38,7 @@ function UserOrders() {
          <>
         <Link to={`/bookingpage/${booking._id}`} className='user-link'><div className='user-container'>
      
-             
-               <img src={booking.places.place.image} alt=''></img>
+              <img src={booking.places.place.image} alt=''></img>
      
                <p className='user-category'>Category:  {booking.places.place.category}</p>
              

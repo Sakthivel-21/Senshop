@@ -327,8 +327,7 @@ app.get('/senshopproducts', async (req, res) => {
 app.get('/userorders', async (req, res) => {
 
     try {
-        const product = await payModel.find()
-        .populate({
+        const product = await payModel.find().populate({
             path:'places', 
             populate: {
                 path: 'place'
