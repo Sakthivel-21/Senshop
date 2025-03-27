@@ -28,7 +28,7 @@ function UserOrders() {
   
   return (
    <>
-     <h2 className='user-head'>Your Orders</h2>
+     <h2 className='user-head'>Total Orders</h2>
         <hr className='hr-lineded'/>
      
        
