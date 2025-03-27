@@ -10,7 +10,7 @@ function UserOrders() {
 
    axios.defaults.withCredentials= true;
   
-    const[user, setUser] = useState()
+    const[user, setUser] = useState([])
 
   
       useEffect (() => {
