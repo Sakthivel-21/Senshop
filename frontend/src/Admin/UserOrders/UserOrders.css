@@ -56,10 +56,12 @@
 @media  screen and (max-width: 360px) {
     .user{
         width: 90%;
+        margin-left: 0px;
     }
     .user-container{
         display: block;
         margin-left: 0px;
+        width: 90%;
     }
     .user-container img{
         width: 25%;
@@ -74,7 +76,7 @@
     .user-1{
         padding-left: 20px;
     }
-    .user-lineded{
+    .hr-lineded{
         margin-left: 50px;
     }
     .user-dash{
