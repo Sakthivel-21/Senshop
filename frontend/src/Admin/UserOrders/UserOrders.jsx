@@ -10,7 +10,7 @@ function UserOrders() {
 
    axios.defaults.withCredentials= true;
   
-    const[user, setUser] = useState([])
+    const[user, setUser] = useState()
 
   
       useEffect (() => {
@@ -34,13 +34,13 @@ function UserOrders() {
        
      
        <div className='user'>
-       { user.map(booking => (
+       { user?.length > 0 ? (user.map(booking => (
          <>
         <Link to={`/bookingpage/${booking._id}`} className='user-link'><div className='user-container'>
      
               <img src={booking.places.place.image} alt=''></img>
      
-               <p className='user-category'>Category:  {booking.places?.place?.category?? "N/A"}</p>
+               <p className='user-category'>Category:  {booking.places.place.category}</p>
              
                <p className='user-1'>Total Price: RS {booking.places.price}</p>
               
@@ -53,7 +53,9 @@ function UserOrders() {
         </div></Link>
         <hr className='hr-user'/>
         </>
-     ))} 
+     ))): (
+      <p>No orders found</p>
+     )}
      </div>
    </>
   )

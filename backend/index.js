@@ -331,7 +331,7 @@ app.get('/userorders', async (req, res) => {
             path:'places', 
             populate: {
                 path: 'place',
-                model: 'ProductModel'
+                
         }}).populate('user')
         res.json(product)
     }
